@@ -12,8 +12,6 @@ move_path = project_path+'/output/test/tracking_results/otetrack/otetrack_256_fu
 checkpoint_all = os.path.join(project_path,'test_checkpoint','OTETrack_all.pth.tar')
 checkpoint_got = os.path.join(project_path,'test_checkpoint','OTETrack_got.pth.tar')
 
-# checkpoint =  '/home/lhg/work/fxy_ar1/AR_update/ARTrack_ep0483.pth.tar'
-print(torch.version.cuda)
 dataset_name = ['lasot','got10k_test','trackingnet','lasot_extension_subset','tnl2k','nfs','uav']
 for dataset in dataset_name:
     print(dataset)
