@@ -231,7 +231,10 @@ class OTETrack(BaseTracker):
         print('self.hanning_size',self.hanning_size)
 
         if pre_seq_number  == None:
-            self.pre_seq_number = self.cfg.DATA.SEARCH.USE_PREDICT # 7
+            if dataset_name == 'uav':
+                self.pre_seq_number = 5
+            else:
+                self.pre_seq_number = self.cfg.DATA.SEARCH.USE_PREDICT # 7
         else:
             self.pre_seq_number = int(pre_seq_number)
         print('self.pre_seq_number',self.pre_seq_number)
