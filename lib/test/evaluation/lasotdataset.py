@@ -346,7 +346,4 @@ class LaSOTDataset(BaseDataset):
                          'volleyball-18', 
                          'volleyball-19']
         
-        seq1 = ['volleyball-19']
-
-        # return sequence_all
-        return seq1
+        return sequence_all
