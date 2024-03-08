@@ -37,11 +37,11 @@ Our baseline model (backbone: Overlapped ViT-B, resolution: 256x256) can run at 
 ## Install the environment
 
 We use the Anaconda (**CUDA 11.3**) to build the environment (**Linux**).
-Before you run our project, we suggest that you install and activate the environment by running the commands below. 
+Before you run our project, we suggest that you install and 🔴activate🔴 the environment by running the commands below. 
 ```
 conda env create -f OTETrack_env_cuda113.yaml
 
-conda activate otetrack
+🔴conda activate otetrack🔴
 ```
 Partial paramount site-packages requirements are listed below:
 - `python == 3.9.7` 
@@ -183,17 +183,19 @@ def local_env_settings():
     
     return settings
 ```
-## <font color=Red>Create two folders to store weights</font>
-<font color=Red>You should create two folders to store the weights for training or testing . We supply the command below to complete it:</font>
+🔴
+## Create two folders to store weights
+You should create two folders to store the weights for training or testing. We supply the command below to complete it:
 ```
 python mkdirs.py
 ```
-<font color=Red>The created folders are put under the project path, which shall look like this:</font>
+The created folders are put under the project path, which shall look like this:
 ```
    ${PROJECT_ROOT}
     |-- pretrained_models
     |-- test_checkpoint
 ```
+🔴
 ## Weight sources (OTETrack_256_full and OTETrack_256_got):
 
 You can download the model weights from [Google Drive](https://drive.google.com/file/d/1-65oAN2QDsROvkdkOje9tqjPk1scdLOJ/view?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1lJz4RlgCE8XW7lV3sXbcBw?pwd=25ur) (extracted code: 25ur).
@@ -230,7 +232,8 @@ For convenience, you can run the command below to test and evaluate all benchmar
 python lib/test/analysis/test_all.py
 
 ```
-<font color=Red>After you finish the process above, the raw result files for all the benchmarks will be saved under `$PROJECT_ROOT$/all_test_result` and the results will be record in `$PROJECT_ROOT$/all_test_result.txt`. the The file tree shall look like this: </font>
+🔴After you finish the process above, the raw result files for all the benchmarks will be saved under `$PROJECT_ROOT$/all_test_result` and the results will be record in `$PROJECT_ROOT$/all_test_result.txt`. The file tree shall look like this:🔴
+🔴
 ```
    ${PROJECT_ROOT}
     |-- all_test_result
@@ -239,7 +242,7 @@ python lib/test/analysis/test_all.py
     |   ...
     |-- all_test_result.txt
 ```
-
+🔴
 You can also test and evaluate each benchmark respectively by running the commands below:
 
 - GOT10K-test
