@@ -152,7 +152,7 @@ class EnvironmentSettings:
         project_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
         # project path
-        self.workspace_dir = project_path    # Base directory for saving network checkpoints.
+        self.workspace_dir = project_path 
         self.tensorboard_dir = os.path.join(project_path, 'tensorboard')  
         self.pretrained_networks = os.path.join(project_path, 'pretrained_networks')  
 
