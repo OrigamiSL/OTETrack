@@ -383,11 +383,9 @@ class OTETrack(BaseTracker):
             input_std = []
             for xx_std in std:
                 input_std.append(self.std_weight*xx_std)
-            # print('1',input_std)
-            # print('2',2*std)
         else:
             input_std = 2*std
-        #hanning_feat = get_hanning(2*std,box_out_last,feat_for_hanning,self.bins,magic_num,self.hanning_size)
+            
         hanning_feat = get_hanning(input_std,box_out_last,feat_for_hanning,self.bins,magic_num,self.hanning_size)
         
         value, extra_seq = hanning_feat.topk(dim=-1, k=1)[0], hanning_feat.topk(dim=-1, k=1)[1]
