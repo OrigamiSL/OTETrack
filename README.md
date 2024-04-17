@@ -184,6 +184,18 @@ Put the model weights you download in `./test_checkpoint.` The file tree shall l
     |   |-- OTETrack_all.pth.tar
     |   |-- OTETrack_got.pth.tar
 ```
+## Raw results
+You can download the raw results in `$PROJECT_ROOT$/raw_result.zip`. After you unzip the zipfile, the file tree shall look like this:
+```
+   ${PROJECT_ROOT}
+    |-- raw_result
+    |   |-- got10k_submit.zip
+    |   |-- lasot.zip
+    |   |-- lasotext.zip
+    |   |-- trackingnet_submit.zip
+    |   |-- uav.zip
+```
+
 ## Download the pre-trained weight
 Download pre-trained [MAE ViT-Base weight](https://dl.fbaipublicfiles.com/mae/pretrain/mae_pretrain_vit_base.pth) and put it under `$PROJECT_ROOT$/pretrained_models` 
 
