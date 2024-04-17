@@ -175,7 +175,7 @@ The created folders are put under the project path, which shall look like this:
 
 ## Weight sources (OTETrack_256_full and OTETrack_256_got):
 
-You can download the model weights from [Google Drive](https://drive.google.com/file/d/1-65oAN2QDsROvkdkOje9tqjPk1scdLOJ/view?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1lJz4RlgCE8XW7lV3sXbcBw?pwd=25ur) (extracted code: 25ur).
+You can download the model weights from [Google Drive](https://drive.google.com/file/d/1-9CceF4HwsudLi9pt5ylDEhYtrgGDhsz/view?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1lJz4RlgCE8XW7lV3sXbcBw?pwd=25ur) (extracted code: 25ur).
 
 Put the model weights you download in `./test_checkpoint.` The file tree shall look like this:
 ```
