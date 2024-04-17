@@ -13,8 +13,7 @@ checkpoint_all = os.path.join(project_path,'test_checkpoint','OTETrack_all.pth.t
 checkpoint_got = os.path.join(project_path,'test_checkpoint','OTETrack_got.pth.tar')
 
 print(torch.version.cuda)
-# dataset_name = ['lasot','lasot_extension_subset','uav','got10k_test','trackingnet']
-dataset_name = ['lasot_extension_subset','got10k_test','trackingnet']
+dataset_name = ['lasot','lasot_extension_subset','uav','got10k_test','trackingnet']
 
 for dataset in dataset_name:
         
