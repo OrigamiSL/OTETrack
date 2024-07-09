@@ -1,6 +1,6 @@
 # OTETrack
 
-**Overlapped Trajectory Enhanced Visual Tracking**
+**Overlapped Trajectory-Enhanced Visual Tracking**
 
 Manuscript has been submitted to IEEE TCSVT
 
