@@ -10,7 +10,7 @@ E-mail: shenli@buaa.edu.cn
 
 Model Architecture
 ---------
-![](./figure/overview.jpg)
+![](./figure/OTETrack_overview.jpg)
 
 
 Abstract
