@@ -64,10 +64,8 @@ LaSOTEXT dataset can be acquired at: [LaSOTEXT](https://onedrive.live.com/?authk
 UAV123 dataset can be acquired at: [UAV123](https://drive.google.com/file/d/0B6sQMCU1i4NbNGxWQzRVak5yLWs/view?resourcekey=0-IjwQcWEzP2x3ec8kXtLBpA).
 ## Data Preparation
 
-After you acquire and unzip the raw data of all datasets, please separately place them in corresponding folders, e.g., putting the train split of LaSOT under `${LASOT_TRAIN_PATH}`. Notice that we test and evaluate NFS on its 30fps version, however the downloaded version is 120fps. Therefore, you need to sample the data via running the command below to get the needed NFS30:
-```
-python ./lib/test/evaluation/process_nfs.py --root_path ${NFS_PATH}
-```
+After you acquire and unzip the raw data of all datasets, please separately place them in corresponding folders, e.g., putting the train split of LaSOT under `${LASOT_TRAIN_PATH}`.
+
 The file tree shall look like this:
 ```
     #Training Split:
