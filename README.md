@@ -281,4 +281,4 @@ If any part of our work helps your research, please consider citing us and givin
 
 ## Contact
 
-If you have any questions or concerns, feel free to open issues or directly contact me through the ways on my GitHub homepage **provide below paper's title**.
+If you have any questions or concerns, feel free to open issues or directly contact me through the ways on my GitHub homepage.
