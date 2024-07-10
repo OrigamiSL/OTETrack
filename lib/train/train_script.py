@@ -6,8 +6,7 @@ from torch.nn import BCEWithLogitsLoss
 # train pipeline related
 from lib.train.trainers import LTRTrainer
 from lib.train.dataset import Lasot, Got10k, MSCOCOSeq, ImagenetVID, TrackingNet
-from lib.train.dataset import Lasot_lmdb, Got10k_lmdb, MSCOCOSeq_lmdb, ImagenetVID_lmdb, TrackingNet_lmdb
-from lib.train.data import sampler, opencv_loader, processing, LTRLoader, sequence_sampler
+from lib.train.data import sampler, opencv_loader, processing, LTRLoader
 # distributed training related
 from torch.nn.parallel import DistributedDataParallel as DDP
 # some more advanced functions
@@ -145,19 +144,6 @@ def run(settings):
     if settings.script_name == "otetrack":
         net = build_otetrack(cfg)
         loader_train, loader_val = build_dataloaders(cfg, settings)
-    elif settings.script_name == "otetrack_seq":
-        net = build_otetrack_seq(cfg)
-        dataset_train = sequence_sampler.SequenceSampler(
-            datasets=names2datasets(cfg.DATA.TRAIN.DATASETS_NAME, settings, opencv_loader),
-            p_datasets=cfg.DATA.TRAIN.DATASETS_RATIO,
-            samples_per_epoch=cfg.DATA.TRAIN.SAMPLE_PER_EPOCH,
-            max_gap=cfg.DATA.MAX_GAP, max_interval=cfg.DATA.MAX_INTERVAL,
-            num_search_frames=cfg.DATA.SEARCH.NUMBER, num_template_frames=1,
-            frame_sample_mode='random_interval',
-            prob=cfg.DATA.INTERVAL_PROB)
-        loader_train = SLTLoader('train', dataset_train, training=True, batch_size=cfg.TRAIN.BATCH_SIZE,
-                                 num_workers=cfg.TRAIN.NUM_WORKER,
-                                 shuffle=False, drop_last=True)
     else:
         raise ValueError("illegal script name")
 
