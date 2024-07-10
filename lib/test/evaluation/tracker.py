@@ -5,7 +5,6 @@ from lib.test.evaluation.environment import env_settings
 import time
 import cv2 as cv
 
-from lib.utils.lmdb_utils import decode_img
 from pathlib import Path
 import numpy as np
 
