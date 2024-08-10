@@ -2,7 +2,7 @@
 
 **Overlapped Trajectory-Enhanced Visual Tracking**
 
-Manuscript has been submitted to IEEE TCSVT
+This work has been accepted by IEEE TCSVT
 
 GitHub maintainer: [Li Shen](https://github.com/OrigamiSL)
 
