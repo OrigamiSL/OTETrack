@@ -266,6 +266,10 @@ python tracking/test.py otetrack otetrack_256_full --dataset uav --test_checkpoi
 python tracking/analysis_otetrack.py otetrack otetrack_256_full --dataset uav
 ```
 
+## Others
+
+If you would like to train GOT-10k by yourself, you may find that 200 epochs are not enough for the convergence, which can be manifested by the validation result. Then, you can try 400 epochs and decays the weight at the 300-th epoch.
+
 ## Acknowledgement
 
 This codebase is implemented on the following projects. We really appreciate their authors for the open-source works!
